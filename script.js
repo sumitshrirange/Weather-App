@@ -100,9 +100,9 @@ function fetchResults(targetLocation) {
                 wImg1.src = "Assets/Cloud 3 zap.png";
                 wImg2.src = "Assets/Cloud 3 zap.png";
             }
-            else{
-                wImg1.src = "Assets/s-rise.png";
-                wImg2.src = "Assets/s-rise.png";
+            else if(data.weather[0].main == "Mist"){
+                wImg1.src = "Assets/Moon cloud mid rain.png";
+                wImg2.src = "Assets/Moon cloud mid rain.png";
             }
         }
         changeImages();
