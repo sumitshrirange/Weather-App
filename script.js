@@ -104,6 +104,14 @@ function fetchResults(targetLocation) {
                 wImg1.src = "Assets/Moon cloud mid rain.png";
                 wImg2.src = "Assets/Moon cloud mid rain.png";
             }
+            else if(data.weather[0].main == "Clear"){
+                wImg1.src = "Assets/Moon cloud fast wind.png";
+                wImg2.src = "Assets/Moon cloud fast wind.png";
+            }
+            else if(data.weather[0].main == "Drizzle"){
+                wImg1.src = "Assets/Moon cloud fast wind.png";
+                wImg2.src = "Assets/Moon cloud fast wind.png";
+            }
         }
         changeImages();
 
