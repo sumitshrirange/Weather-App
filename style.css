@@ -1,0 +1,253 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Roboto, 'Trebuchet MS', sans-serif;
+    background-color: #1f1f1f;
+    outline: none;
+}
+
+main{
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.container{
+    position: relative;
+    height: 90vh;
+    width: 350px;
+    padding: 25px;
+    border-radius: 2rem;
+    background-color: #fff;
+}
+
+.myname{
+    position: absolute;
+    top: 6px;
+    left: 125px;
+    width: 100px;
+    height: 28px;
+    background: #000;
+    border-radius: 50px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.myname p{
+    color: #ffffffb1;
+    font-size: 10px;
+    font-weight: bolder;
+    letter-spacing: 1px;
+}
+
+
+/* Search Section Code  */
+
+
+.search{
+    background-color: rgb(235, 235, 235);
+    height: 45px;
+    width: 100%;
+    border-radius: 10px;
+    display: flex;
+    align-items: center;
+    overflow: hidden;
+    margin-top: 30px;
+}
+
+.search i{
+    font-size: 16px;
+    color: #909090;
+    margin-left: 10px;
+}
+
+.search input{
+    border: none;
+    width: 100%;
+    padding: 10px;
+    background-color: transparent;
+}
+
+.search button{
+    height: 100%;
+    width: 55px;
+    border-radius: 7px;
+    background-color: #000;
+}
+
+.search button i{
+    color: #fff;
+    margin-right: 9px;
+}
+
+
+/* Main Weather Code  */
+
+
+.weather{
+    position: relative;
+    width: 100%;
+    height: 170px;
+    background: #000;
+    border-radius: 35px;
+    margin-top: 35px;
+    display: flex;
+    flex-direction: column;
+    gap: 4px;
+    padding: 19px 25px;
+    box-shadow: 0 10px 1.5rem #545454;
+}
+
+.weather .dateSection{
+    color: #fff;
+    font-size: 13px;
+    font-weight: bolder;
+    letter-spacing: .7px;
+}
+
+.weather .location{
+    font-size: 12px;
+    letter-spacing: .4px;
+    color: #d7d7d7;
+}
+
+.weather .temp{
+    position: relative;
+    color: #fff;
+    font-size: 55px;
+    font-weight: bold;
+}
+
+.weather span, i{
+    background: transparent;
+}
+
+.temp sup i{
+    position: absolute;
+    top: 15px;
+    left: 60px;
+    color: #fff;
+    font-size: 26px;
+    font-weight: lighter;
+}
+
+.weather .temp-type{
+    font-size: 14px;
+    color: #fff;
+    letter-spacing: .6px;
+    font-weight: bolder;
+}
+
+.weather img{
+    position: absolute;
+    right: -15px;
+    bottom: -48px;
+    background-color: transparent;
+    width: 200px;
+}
+
+
+/* Other Section Code  */
+
+
+.other{
+    margin-top: 40px;
+}
+
+h3{
+    letter-spacing: .5px;
+    color: #545454;
+    background-color: #fff;
+}
+
+.cards{
+    background-color: #fff;
+    display: flex;
+    align-items: center;
+    padding: 0 10px;
+    justify-content: space-between;
+}
+
+.card{
+    box-shadow: 0 5px 1rem #545454;
+}
+
+.other .card{
+    margin-top: 20px;
+    width: 65px;
+    height: 90px;
+    border-radius: 16px;
+    background-color: #000;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.other .card img{
+    width: 60px;
+    background-color: transparent;
+}
+
+.weather-img2{
+    margin-top: -6px;
+}
+
+.other .card p{
+    background-color: transparent;
+    color: #e9e9e9;
+    font-size: 9px;
+    text-align: center;
+}
+
+#humidity{
+    width: 100px;
+    height: 110px;
+}
+
+#humidity p{
+    font-size: 13px;
+    letter-spacing: .5px;
+}
+
+
+/* Sunrise & Sunset Section Code  */
+
+.s-rise-set{
+    margin-top: 35px;
+    height: 100px;
+    background-color: #fff;
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+}
+
+.s-rise img, .s-set img{
+    width: 50px;
+}
+
+.s-set, .s-rise{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-evenly;
+    width: 70px;
+    height: 100%;
+    padding-bottom: 6px;
+    background-color: #000;
+    border-radius: 20px;
+}
+
+.s-rise-set img, .s-rise p, .s-set p{
+    background-color: transparent;
+}
+
+.s-rise-set p{
+    font-size: 10px;
+    text-align: center;
+    color: #fff;
+    font-weight: bold;
+    letter-spacing: .3px;
+}

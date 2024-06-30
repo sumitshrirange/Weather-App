@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Wheather App by Sumit</title>
+    <link rel="stylesheet" href="style.css">
+    <link href="https://cdn.jsdelivr.net/npm/remixicon@4.3.0/fonts/remixicon.css" rel="stylesheet">
+</head>
+<body>
+    <main>
+        <div class="container">
+
+            <section class="myname">
+                <p>BY SUMIT</p>
+            </section>
+
+            <section class="search">
+                <i class="ri-search-line"></i>
+                <input type="search" name="location" id="search" placeholder="Search City">
+                <button id="submit"><i class="ri-search-line"></i></button>
+            </section>
+
+            <section class="weather">
+                <span class="dateSection"></span>
+                <span class="location">Nagpur</span>
+                <span class="temp"><span class="temp-rate">29</span><sup><i class="ri-celsius-line"></i></sup></span>
+                <span class="temp-type">Rainy Clouds</span>
+                <img class="weather-img" src="Assets/Moon cloud mid rain.png" alt="">
+            </section>
+
+            <section class="other">
+                <h3>Other</h3>
+                <div class="cards">
+                    <div class="card">
+                        <img class="weather-img2" src="Assets/Moon cloud mid rain.png" alt="">
+                        <p> <span class="feels-like">29</span><sup><i class="ri-celsius-line"></i></sup><br>Feels Like</p>
+                    </div>
+                    <div id="humidity" class="card">
+                        <img src="Assets/humidity.png" alt="">
+                        <p class="hum-percent">80%</p>
+                        <p>Humidity</p>
+                    </div>
+                    <div class="card">
+                        <img src="Assets/Mid snow fast winds (1).png" alt="">
+                        <p> <span class="wind-speed">7 km/h</span><br>Wind</p>
+                    </div>
+                </div>
+            </section>
+
+            <section class="s-rise-set">
+                <div class="s-rise card">
+                    <img src="Assets/s-rise.png" alt="">
+                    <p class="s-rise-time">06:00 AM</p>
+                    <p>Sunrise</p>
+                </div>
+                <div class="s-set card">
+                    <img src="Assets/s-set.png" alt="">
+                    <p class="s-set-time">18:00 PM</p>
+                    <p>Sunset</p>
+                </div>
+            </section>
+
+        </div>
+    </main>
+
+    <script src="script.js"></script>
+</body>
+</html>
