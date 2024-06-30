@@ -38,6 +38,7 @@ main{
 
 .myname p{
     color: #ffffffb1;
+    background: #000;
     font-size: 10px;
     font-weight: bolder;
     letter-spacing: 1px;
