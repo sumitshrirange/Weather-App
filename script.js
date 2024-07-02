@@ -81,36 +81,40 @@ function fetchResults(targetLocation) {
                 wImg2.src = "Assets/Clouds.png";
             }
             else if(data.weather[0].main == "Rain"){
-                wImg1.src = "Assets/Big rain drops.png";
-                wImg2.src = "Assets/Big rain drops.png";
-            }
-            else if(data.weather[0].main == "Haze"){
-                wImg1.src = "Assets/Moon cloud fast wind.png";
-                wImg2.src = "Assets/Moon cloud fast wind.png";
-            }
-            else if(data.weather[0].main == "Snow" || "Wind"){
-                wImg1.src = "Assets/Mid snow fast winds.png";
-                wImg2.src = "Assets/Mid snow fast winds.png";
+                wImg1.src = "Assets/rain.png";
+                wImg2.src = "Assets/rain.png";
             }
             else if(data.weather[0].main == "Sun"){
                 wImg1.src = "Assets/s-rise.png";
                 wImg2.src = "Assets/s-rise.png";
             }
-            else if(data.weather[0].main == "Zaps" || "Zap"){
-                wImg1.src = "Assets/Cloud 3 zap.png";
-                wImg2.src = "Assets/Cloud 3 zap.png";
+            else if(data.weather[0].main == "Zap"){
+                wImg1.src = "Assets/zap.png";
+                wImg2.src = "Assets/zap.png";
             }
             else if(data.weather[0].main == "Mist"){
-                wImg1.src = "Assets/Moon cloud mid rain.png";
-                wImg2.src = "Assets/Moon cloud mid rain.png";
+                wImg1.src = "Assets/mist.png";
+                wImg2.src = "Assets/mist.png";
+            }
+            else if(data.weather[0].main == "Snow"){
+                wImg1.src = "Assets/snow-wind.png";
+                wImg2.src = "Assets/snow-wind.png";
+            }
+            else if(data.weather[0].main == "Wind"){
+                wImg1.src = "Assets/snow-wind.png";
+                wImg2.src = "Assets/snow-wind.png";
+            }
+            else if(data.weather[0].main == "Haze"){
+                wImg1.src = "Assets/haze-clear-drizzle.png";
+                wImg2.src = "Assets/haze-clear-drizzle.png";
             }
             else if(data.weather[0].main == "Clear"){
-                wImg1.src = "Assets/Moon cloud fast wind.png";
-                wImg2.src = "Assets/Moon cloud fast wind.png";
+                wImg1.src = "Assets/haze-clear-drizzle.png";
+                wImg2.src = "Assets/haze-clear-drizzle.png";
             }
             else if(data.weather[0].main == "Drizzle"){
-                wImg1.src = "Assets/Moon cloud fast wind.png";
-                wImg2.src = "Assets/Moon cloud fast wind.png";
+                wImg1.src = "Assets/haze-clear-drizzle.png";
+                wImg2.src = "Assets/haze-clear-drizzle.png";
             }
         }
         changeImages();
@@ -123,8 +127,16 @@ function fetchResults(targetLocation) {
 
 fetchResults();
 
-let sub = document.getElementById("submit");
-sub.addEventListener("click", () => {
-    cityname = document.querySelector(".search input").value;
-    fetchResults(cityname)
-})
+
+let searchInput = document.querySelector(".search input");
+
+searchInput.addEventListener("keypress", (e) => {
+    if(e.event = "Enter"){
+        getCity();
+    }
+});
+
+function getCity (){
+    cityname = searchInput.value;
+    fetchResults(cityname);
+};
